@@ -9,8 +9,38 @@ function MyComponent1() {
 // 方式2:ES6类语法（复杂组件时使用）
 class MyComponent2 extends React.Component {
   render() { //重写父类的render方法
+    console.log(this);
     return <h1>My component 2</h1>;
   }
 }
 
-export default MyComponent2;
+
+class Person extends React.Component {
+
+  constructor(props) {
+    super(props);
+    console.log(props); //查看所有属性
+  }
+
+  render() {
+    return (
+      <ul>
+        <li>name:{this.props.name}</li>
+        <li>age:{this.props.age}</li>
+      </ul>
+      );
+  }
+}
+
+// 指定默认属性
+Person.defaultProps = {
+  age: 18
+}
+
+Person.propTypes = {
+  // 规定name属性为string类型，而且是必须的
+  name: React.PropTypes.string.isRequired,
+  age: React.PropTypes.number
+}
+
+export default Person;

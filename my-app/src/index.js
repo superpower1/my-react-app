@@ -25,4 +25,11 @@ registerServiceWorker();
 // 	;
 // ReactDOM.render(vDom, document.getElementById('root'));
 
-ReactDOM.render(<MyComponent />, document.getElementById('root'));
+let person = {
+	name: 'Json',
+	age: 20
+};
+
+// ReactDOM.render(<MyComponent name={person.name} age={person.age}/>, document.getElementById('root'));
+// 可以用{...person}的写法将所有参数传进去
+ReactDOM.render(<MyComponent {...person}/>, document.getElementById('root'));
