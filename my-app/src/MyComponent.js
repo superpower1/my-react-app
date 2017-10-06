@@ -1,6 +1,8 @@
 import React from 'react';
 import MyState from './MyState';
 import MyList from './MyList';
+import MyRealtime from './MyRealtime';
+import MyLifespan from './MyLifespan';
 
 // 定义组件的方法
 // 方式1：工厂函数（简单组件时使用）
@@ -53,6 +55,9 @@ class Person extends React.Component {
 
         <MyState />
         <MyList />
+        <MyRealtime />
+        <MyLifespan />
+
       </div>
       );
   }

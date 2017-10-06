@@ -31,5 +31,5 @@ let person = {
 };
 
 // ReactDOM.render(<MyComponent name={person.name} age={person.age}/>, document.getElementById('root'));
-// 可以用{...person}的写法将所有参数传进去
+// 可以用{...person}的写法将对象的所有属性通过props传进去
 ReactDOM.render(<MyComponent {...person}/>, document.getElementById('root'));
