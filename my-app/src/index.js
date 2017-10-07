@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import MyComponent from './MyComponent';
+import './index.css'; //引入样式只需要执行一次所以不需要得到返回的东西
+// import App from './App';
+// import MyComponent from './components/MyComponent/MyComponent';
+import Comment from './components/MyComments/Comment';
 import registerServiceWorker from './registerServiceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
@@ -32,4 +33,7 @@ let person = {
 
 // ReactDOM.render(<MyComponent name={person.name} age={person.age}/>, document.getElementById('root'));
 // 可以用{...person}的写法将对象的所有属性通过props传进去
-ReactDOM.render(<MyComponent {...person}/>, document.getElementById('root'));
+// ReactDOM.render(<MyComponent {...person}/>, document.getElementById('root'));
+
+
+ReactDOM.render(<Comment />, document.getElementById('root'));

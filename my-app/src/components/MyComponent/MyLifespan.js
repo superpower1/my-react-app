@@ -52,8 +52,8 @@ class MyLifespan extends React.Component {
 	}
 
 	delComp = event => {
-		document.getElementById('myname').removeChild(document.getElementById('title'));
-		// ReactDOM.unmountComponentAtNode(document.getElementById('root'));
+		// document.getElementById('myname').removeChild(document.getElementById('title'));
+		ReactDOM.unmountComponentAtNode(document.getElementById('root'));
 	}
 
   render() {

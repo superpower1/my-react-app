@@ -68,10 +68,10 @@ Person.defaultProps = {
   age: 18
 }
 
-// Person.propTypes = {
-//   // 规定name属性为string类型，而且是必须的
-//   name: React.PropTypes.string.isRequired,
-//   age: React.PropTypes.number
-// }
+Person.propTypes = {
+  // 规定name属性为string类型，而且是必须的
+  name: React.PropTypes.string.isRequired,
+  age: React.PropTypes.number
+}
 
 export default Person;
