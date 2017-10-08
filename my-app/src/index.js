@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss'; //引入样式只需要执行一次所以不需要得到返回的东西
-import App from './App';
+// import App from './App';
 // import MyComponent from './components/MyComponent/MyComponent';
-import Comment from './components/MyComments/Comment';
+// import Comment from './components/MyComments/Comment';
+import MyTodoList from './components/MyTodoList/MyTodoList';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 
 
@@ -37,3 +38,4 @@ let person = {
 
 
 // ReactDOM.render(<Comment />, document.getElementById('root'));
+ReactDOM.render(<MyTodoList />, document.getElementById('root'));
