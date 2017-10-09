@@ -4,7 +4,8 @@ import React from 'react';
 class TodoFooter extends React.Component {
 
 	checkAll = () => {
-
+		let isAllDone = !this.props.isAllDone;
+		this.props.checkAll(isAllDone);
 	}
 
 	deleteDoneTodos = () => {
@@ -14,17 +15,11 @@ class TodoFooter extends React.Component {
 	render() {
 		const {doneCount, totalCount}  = this.props;
 
-		let isAllDone = false;
-		
-		if (doneCount === totalCount) {
-			isAllDone = true;
-		}
-
 		let display = "block";
 		return (
 			<div className="todo-footer">
 		        <label>
-		          <input type="checkbox" checked={isAllDone} onChange={this.checkAll}/>
+		          <input type="checkbox" checked={this.props.isAllDone} onChange={this.checkAll}/>
 		        </label>
 		        <span>
 		          <span>Done {doneCount}</span> / Total {totalCount}
