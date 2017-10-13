@@ -33,7 +33,7 @@ class GistSearch extends React.Component {
 	render() {
 		return (
 			<div>
-				<input type="text" placeholder="Search Gist with user name" onChange={this.updateInput} value={this.state.inputStr}/>
+				<input type="text" placeholder="Search by username" onChange={this.updateInput} value={this.state.inputStr}/>
 				<button onClick={this.search}>search</button>
 			</div>
 		);
