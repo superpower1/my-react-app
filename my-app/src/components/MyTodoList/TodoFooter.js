@@ -15,7 +15,11 @@ class TodoFooter extends React.Component {
 	render() {
 		const {doneCount, totalCount}  = this.props;
 
-		let display = "block";
+		let display = "none";
+		if (doneCount != 0) {
+			display = "block";
+		}
+
 		return (
 			<div className="todo-footer">
 		        <label>

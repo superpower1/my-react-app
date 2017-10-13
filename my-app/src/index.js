@@ -4,7 +4,8 @@ import './index.scss'; //引入样式只需要执行一次所以不需要得到�
 // import App from './App';
 // import MyComponent from './components/MyComponent/MyComponent';
 // import Comment from './components/MyComments/Comment';
-import MyTodoList from './components/MyTodoList/MyTodoList';
+// import MyTodoList from './components/MyTodoList/MyTodoList';
+import MyGist from './components/MyGist/MyGist';
 import registerServiceWorker from './registerServiceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
@@ -38,4 +39,4 @@ let person = {
 
 
 // ReactDOM.render(<Comment />, document.getElementById('root'));
-ReactDOM.render(<MyTodoList />, document.getElementById('root'));
+ReactDOM.render(<MyGist />, document.getElementById('root'));
